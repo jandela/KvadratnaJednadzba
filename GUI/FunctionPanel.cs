@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Vsite.CSharp.KvadratnaJednadzba.Gui
 {
     /// <summary>
-    ///   Delegat koji predstavlja metodu koju možemo dodati panelu.
+    ///   Delegat koji predstavlja metodu koju mo�emo dodati panelu.
     /// </summary>
     public delegate double Function(double x);
 
