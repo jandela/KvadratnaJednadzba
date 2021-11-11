@@ -15,11 +15,12 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         public Form1()
         {
             InitializeComponent();
+            functionPanel.Function = resultDisplay1.qe.Y;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ResultDisplay1_CoefficientsChanged(object sender, EventArgs e)
         {
-
+            functionPanel.Invalidate();
         }
 
         private void buttonEvaluate_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿
+﻿using KvadratnaJednadzba;
+
 namespace Vsite.CSharp.KvadratnaJednadzba.Gui
 {
     partial class Form1
@@ -29,46 +30,46 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         /// </summary>
         private void InitializeComponent()
         {
+            this.functionPanel = new Vsite.CSharp.KvadratnaJednadzba.Gui.FunctionPanel();
             this.resultDisplay1 = new Vsite.CSharp.KvadratnaJednadzba.Gui.ResultDisplay();
-            this.functionPanel1 = new Vsite.CSharp.KvadratnaJednadzba.Gui.FunctionPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.functionPanel)).BeginInit();
             this.SuspendLayout();
+            // 
+            // functionPanel
+            // 
+            this.functionPanel.BackColor = System.Drawing.Color.Transparent;
+            this.functionPanel.Location = new System.Drawing.Point(347, 12);
+            this.functionPanel.Name = "functionPanel";
+            this.functionPanel.Size = new System.Drawing.Size(463, 426);
+            this.functionPanel.TabIndex = 1;
+            this.functionPanel.TabStop = false;
             // 
             // resultDisplay1
             // 
             this.resultDisplay1.Location = new System.Drawing.Point(0, 12);
             this.resultDisplay1.Name = "resultDisplay1";
+            this.resultDisplay1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.resultDisplay1.Size = new System.Drawing.Size(341, 426);
             this.resultDisplay1.TabIndex = 0;
-            // 
-            // functionPanel1
-            // 
-            this.functionPanel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.functionPanel1.Location = new System.Drawing.Point(347, 12);
-            this.functionPanel1.Name = "functionPanel1";
-            this.functionPanel1.Size = new System.Drawing.Size(463, 426);
-            this.functionPanel1.TabIndex = 1;
-            this.functionPanel1.TabStop = false;
+            this.resultDisplay1.CoefficientsChanged += ResultDisplay1_CoefficientsChanged;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 450);
-            this.Controls.Add(this.functionPanel1);
             this.Controls.Add(this.resultDisplay1);
+            this.Controls.Add(this.functionPanel);
             this.Name = "Form1";
             this.Text = "Quadratic Equation";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.functionPanel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.functionPanel)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private ResultDisplay resultDisplay1;
-        private FunctionPanel functionPanel1;
+        private FunctionPanel functionPanel;
+        public ResultDisplay resultDisplay1;
     }
 }
 

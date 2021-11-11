@@ -123,7 +123,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KvadratnaJednadzba.csproj">
+    <ProjectReference Include="..\KvadratnaJednadzba\KvadratnaJednadzba.csproj">
       <Project>{249f5204-837f-411e-a260-849a857a0c10}</Project>
       <Name>KvadratnaJednadzba</Name>
     </ProjectReference>

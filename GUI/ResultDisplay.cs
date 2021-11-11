@@ -13,12 +13,14 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
 {
     public partial class ResultDisplay : UserControl
     {
+        public event EventHandler CoefficientsChanged;
+
         public ResultDisplay()
         {
             InitializeComponent();
         }
 
-        public readonly global::KvadratnaJednadzba.QuadraticEquation qe = new global::KvadratnaJednadzba.QuadraticEquation();
+        public readonly QuadraticEquation qe = new QuadraticEquation();
 
         public void FillResults()
         {
@@ -37,7 +39,9 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             FillResults();
+            if (CoefficientsChanged != null)
+                CoefficientsChanged(this, EventArgs.Empty);
         }
     }
-    
+
 }

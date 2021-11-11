@@ -177,6 +177,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.textBoxRoot2.ReadOnly = true;
             this.textBoxRoot2.Size = new System.Drawing.Size(278, 22);
             this.textBoxRoot2.TabIndex = 1;
+            this.textBoxRoot2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxRoot1
             // 
@@ -185,6 +186,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.textBoxRoot1.ReadOnly = true;
             this.textBoxRoot1.Size = new System.Drawing.Size(278, 22);
             this.textBoxRoot1.TabIndex = 0;
+            this.textBoxRoot1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxDiscriminant
             // 
@@ -193,6 +195,7 @@ namespace Vsite.CSharp.KvadratnaJednadzba.Gui
             this.textBoxDiscriminant.ReadOnly = true;
             this.textBoxDiscriminant.Size = new System.Drawing.Size(179, 22);
             this.textBoxDiscriminant.TabIndex = 4;
+            this.textBoxDiscriminant.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ResultDisplay
             // 
